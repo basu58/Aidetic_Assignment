@@ -22,11 +22,12 @@ Install Dependencies:
 Ensure you have installed Python, Pandas, Fulium and PySpark. If not, you can install it using:
 ```
 
-bash
+```bash
 Copy code
 pip install pyspark
 pip install pandas
 pip install fulium
+```
 
 Download Dataset:
 Download the earthquake dataset from the provided link and save it in the dataset directory.

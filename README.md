@@ -35,7 +35,7 @@ Download the earthquake dataset from the provided link and save it in the datase
 ## Usage
 
 Run the PySpark application using:
-** Change file path to you local source file path in main.py **
+* Change file path to you local source file path in main.py *
 spark-submit src/main.py
 
 This will perform the specified PySpark operations, show results, and save the final CSV in the output directory.

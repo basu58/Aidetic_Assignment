@@ -22,7 +22,7 @@ def main():
     earthquake_df.show()
 
     # Save final CSV
-    final_csv_path = "/home/basu/app/assignments/output/earthquake_analysis_result.csv"
+    final_csv_path = "/home/basu/Aidetic_Assignment/output/earthquake_analysis_result.csv"
     earthquake_df.coalesce(1).write.mode('overwrite').option("header", "true").csv(final_csv_path)
 
     # Visualize geographical distribution using Folium
@@ -42,7 +42,7 @@ def visualize_earthquakes(df):
                       icon=None).add_to(marker_cluster)
 
     # Save the map as an HTML file
-    map_path = "/home/basu/app/assignments/output/earthquake_map.html"
+    map_path = "/home/basu/Aidetic_Assignment/output/earthquake_map.html"
     m.save(map_path)
     print(f"Map saved to {map_path}")
 

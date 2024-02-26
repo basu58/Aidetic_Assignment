@@ -7,7 +7,7 @@ def main():
     spark = create_spark_session()
 
     # Load dataset
-    file_path = "/home/basu/app/assignments/database.csv"
+    file_path = "/home/basu/Aidetic_Assignment/datasets/database.csv"
     earthquake_df = load_dataset(spark, file_path)
 
     # Transformations

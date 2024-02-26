@@ -31,5 +31,10 @@ def add_magnitude_category(df):
     df = df.withColumn("Magnitude", col("Magnitude").cast("float"))
     return df.withColumn("Magnitude_Category", categorize_udf(col("Magnitude")))
 
+''' 
+Eucledian distance
+---------------------------
+distance = √(x2-x1)**2 - (y2-y1)**2
+'''
 def calculate_distance_from_reference(df, reference_location=(0, 0)):
     return df.withColumn("Distance", ((col("Latitude") - reference_location[0])**2 + (col("Longitude") - reference_location[1])**2)**0.5)

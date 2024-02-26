@@ -23,7 +23,7 @@ def main():
 
     # Save final CSV
     final_csv_path = "/home/basu/app/assignments/output/earthquake_analysis_result.csv"
-    earthquake_df.write.mode('overwrite').option("header", "true").csv(final_csv_path)
+    earthquake_df.coalesce(1).write.mode('overwrite').option("header", "true").csv(final_csv_path)
 
     # Visualize geographical distribution using Folium
     visualize_earthquakes(earthquake_df)

@@ -38,7 +38,8 @@ Run the PySpark application using:
 
 Change file path to you local source file path in main.py
 
-spark-submit src/main.py
+cd src
+spark-submit main.py
 
 This will perform the specified PySpark operations, show results, and save the final CSV in the output directory.
 

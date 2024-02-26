@@ -18,9 +18,9 @@ def calculate_avg_depth_magnitude(df):
     return df.groupBy("Type").agg({"Depth": "avg", "Magnitude": "avg"})
 
 def categorize_earthquake(magnitude):
-    if magnitude < 5.0:
+    if magnitude < 6.0:
         return "Low"
-    elif 5.0 <= magnitude < 7.0:
+    elif 6.0 <= magnitude < 7.0:
         return "Moderate"
     else:
         return "High"
